@@ -19,4 +19,3 @@ ensure_owner_admin(OWNER_ID)
 
 # Регистрируем хэндлеры (в handlers.py)
 register_handlers(bot)
-
