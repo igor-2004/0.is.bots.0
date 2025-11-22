@@ -20,7 +20,6 @@ WEBHOOK_URL = os.environ.get("WEBHOOK_URL", "https://bots-00.onrender.com")
 
 # Путь приёма вебхуков (можно оставить /webhook)
 WEBHOOK_PATH = os.environ.get("WEBHOOK_PATH", "/webhook")
-requests.post(f"https://api.telegram.org/bot{BOT_TOKEN}/setWebhook", data={"url": url})
 
 # Ограничения/настройки
 SEND_COOLDOWN_SECONDS = int(os.environ.get("SEND_COOLDOWN_SECONDS", 30 * 60))  # 30 минут по умолчанию
