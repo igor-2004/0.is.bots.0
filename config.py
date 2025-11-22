@@ -14,7 +14,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "1184497918"))
 # Путь к sqlite (если используете Render disk — укажите /data/bot_database.db)
 DB_PATH = os.environ.get("DB_PATH", "/data/bot_database.db")
 
-# 0Вебхук: публичный URL (без пути)
+# Вебхук: публичный URL (без пути)
 # Пример: https://your-service.onrender.com
 WEBHOOK_URL = os.environ.get("WEBHOOK_URL", "https://bots-00.onrender.com")
 
@@ -24,4 +24,5 @@ WEBHOOK_PATH = os.environ.get("WEBHOOK_PATH", "/webhook")
 # Ограничения/настройки
 SEND_COOLDOWN_SECONDS = int(os.environ.get("SEND_COOLDOWN_SECONDS", 30 * 60))  # 30 минут по умолчанию
 USE_OVERLAY_ON_IMAGE = os.environ.get("USE_OVERLAY_ON_IMAGE", "False").lower() in ("1","true","yes")
+
 
