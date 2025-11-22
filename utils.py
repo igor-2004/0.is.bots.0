@@ -44,4 +44,3 @@ def admin_kb():
     kb.add("Удалить админа")
     kb.add("Назад")
     return kb
-  
