@@ -77,4 +77,13 @@ def is_admin(path, user_id:int):
     r = cur.fetchone()
     conn.close()
     return bool(r)
-  
+
+def ensure_owner_admin(owner_id:int, path=None):
+    # Удобная функция: если владелец указан, добавим его в таблицу админов
+    # path параметр необязательный — если не задан, используем DB_PATH через окружение (упрощение)
+    if owner_id is None:
+        return
+    # Если path не передан, пытаемся взять из окружения
+    if not path:
+        path = os.environ.get("DB_PATH", "/data/bot_database.db")
+    add_admin(path, owner_id)
