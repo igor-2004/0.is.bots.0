@@ -17,4 +17,3 @@ def start_scheduler():
     sched.add_job(cleanup_job, 'interval', hours=1)
     sched.start()
     print("Scheduler started")
-  
