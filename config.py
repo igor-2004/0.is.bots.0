@@ -16,7 +16,7 @@ DB_PATH = os.environ.get("DB_PATH", "/data/bot_database.db")
 
 # Вебхук: публичный URL (без пути)
 # Пример: https://your-service.onrender.com
-WEBHOOK_URL = os.environ.get("WEBHOOK_URL", "https://zero-is-bots-0.onrender.com")
+WEBHOOK_URL = os.environ.get("WEBHOOK_URL", "https://bots-00.onrender.com")
 
 # Путь приёма вебхуков (можно оставить /webhook)
 WEBHOOK_PATH = os.environ.get("WEBHOOK_PATH", "/webhook")
