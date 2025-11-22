@@ -1,7 +1,7 @@
 import os
 
 # Обязательные: задаются как переменные окружения на Render или в .env при локальной разработке
-BOT_TOKEN = os.environ.get("8073733884:AAHRpXo9yZ3LTGeaYJD03fuzx1vRChlpa4k")  # ОБЯЗАТЕЛЬНО
+BOT_TOKEN = os.environ.get("8073733884:AAHenpjcO50sjxINpqRCK5O7iUrJCEUBN-I")  # ОБЯЗАТЕЛЬНО
 if not BOT_TOKEN:
     raise RuntimeError("BOT_TOKEN not set in environment!")
 
