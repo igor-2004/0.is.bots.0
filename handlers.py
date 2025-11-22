@@ -168,4 +168,3 @@ def register_handlers(bot: telebot.TeleBot):
             bot.send_message(msg.chat.id, "Ошибка: введи корректный user_id (число).")
         finally:
             clear_state(msg.chat.id)
-      
